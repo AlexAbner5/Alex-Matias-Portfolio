@@ -1,0 +1,39 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Currently...",
+    title: "Real Estate Agent",
+    company: "Keller Williams",
+    description:
+      "Real estate agent in Puerto Rico. Specializes in the purchase, sale, and rental of properties. Expert in the Puerto Rico market and property management with 4 years of experience.",
+    link: "https://agent.kwpuertorico.com/alexmatias",
+  },
+  {
+    date: "Currently...",
+    title: "Software Engineer",
+    company: "SIANA",
+    description:
+      "Led the development of SIANA, a system designed to automate the accreditation process for engineering programs at INTER Bayamón. The project streamlined the previously paper-based and Excel-driven process, reducing errors and improving efficiency. This automation was vital for meeting ABET standards and ensuring the program's continued accreditation and reputation.",
+  },
+  {
+    date: "2023-2024",
+    title: "CEO and Software Engineer",
+    company: "Eazier",
+    description:
+      "Led the development of Eazier, a platform to fully digitalize property management. Selected for the Fase1.org accelerator, the platform was recognized among the top 20 startups during demo day. We developed an MVP that attracted over 200 users, refining features to meet industry needs.",
+      link: "https://eazierpr.azurewebsites.net/",
+  },
+
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
